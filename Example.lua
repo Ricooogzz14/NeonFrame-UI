@@ -39,7 +39,7 @@ Tab.CreateButton({
 
 --/ CREATE A TOGGLE
 Tab.CreateToggle({
-    Name = "God Mode",
+    Name = "Toggle",
     Default = false,
     Callback = function(state)
         print("God Mode:", state)
@@ -48,7 +48,7 @@ Tab.CreateToggle({
 
 --/ CREATE A SLIDER
 Tab.CreateSlider({
-    Name = "WalkSpeed",
+    Name = "Slider",
     Min = 0,
     Max = 200,
     Default = 16,
@@ -63,9 +63,9 @@ Tab.CreateSlider({
 
 --/ CREATE A DROPDOWN
 Tab.CreateDropdown({
-    Name = "Select Team",
-    Options = {"Red", "Blue", "Green"},
-    Default = "Red",
+    Name = "Dropdown",
+    Options = {"A", "B", "C"},
+    Default = "A",
     Callback = function(option)
         print("Selected Team:", option)
     end
@@ -73,7 +73,7 @@ Tab.CreateDropdown({
 
 --/ CREATE A TEXTBOX
 Tab.CreateTextBox({
-    Name = "Player Name",
+    Name = "Textbox",
     Placeholder = "Enter name",
     Default = "",
     Callback = function(text, enterPressed)
